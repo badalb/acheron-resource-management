@@ -1,4 +1,4 @@
-package org.arm.resource.mngt.repository;
+package org.arm.resource.mngt.dataaccess;
 
 import org.arm.resource.mngt.entity.Availability;
 import org.arm.resource.mngt.entity.Resource;

@@ -1,9 +1,9 @@
-package org.arm.resource.mngt.service;
+package org.arm.resource.mngt.impl;
 
 import java.util.List;
 
+import org.arm.resource.mngt.dataaccess.TaskRepository;
 import org.arm.resource.mngt.entity.Task;
-import org.arm.resource.mngt.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 @Service

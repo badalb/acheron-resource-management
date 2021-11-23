@@ -1,4 +1,4 @@
-package org.arm.resource.mngt.service;
+package org.arm.resource.mngt.impl;
 
 import java.util.List;
 

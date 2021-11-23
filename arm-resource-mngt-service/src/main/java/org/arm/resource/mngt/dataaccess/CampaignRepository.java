@@ -1,4 +1,4 @@
-package org.arm.resource.mngt.repository;
+package org.arm.resource.mngt.dataaccess;
 
 import org.arm.resource.mngt.entity.Campaign;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -3,9 +3,9 @@ package org.arm.resource.mngt;
 import java.util.List;
 
 import org.arm.resource.mngt.entity.Campaign;
-import org.arm.resource.mngt.service.CampaignService;
-import org.arm.resource.mngt.service.IProjectService;
-import org.arm.resource.mngt.service.ITaskService;
+import org.arm.resource.mngt.impl.CampaignService;
+import org.arm.resource.mngt.impl.IProjectService;
+import org.arm.resource.mngt.impl.ITaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package org.arm.resource.mngt.repository;
+package org.arm.resource.mngt.dataaccess;
 
 import java.util.List;
 

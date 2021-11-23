@@ -5,8 +5,8 @@ import java.util.List;
 import org.arm.resource.mngt.entity.Availability;
 import org.arm.resource.mngt.entity.Resource;
 import org.arm.resource.mngt.entity.Task;
-import org.arm.resource.mngt.service.IResourceService;
-import org.arm.resource.mngt.service.ITaskService;
+import org.arm.resource.mngt.impl.IResourceService;
+import org.arm.resource.mngt.impl.ITaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +20,7 @@ public class TaskController {
 	
 	
 	@GetMapping("/task")
-	public List<Task> allT(){
+	public List<Task> allTask(){
 		return taskService.getAllTask();
 	}
 	
