@@ -1,11 +1,14 @@
 package org.arm.resource.mngt.entity;
 
 import java.sql.Timestamp;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -32,5 +35,6 @@ public class Campaign {
 	private Timestamp createDate;
 	private Timestamp updateDate;
 	private int isDeleted;
+	
 	
 }

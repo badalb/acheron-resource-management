@@ -7,6 +7,7 @@ import org.arm.resource.mngt.service.ICampaignService;
 import org.arm.resource.mngt.service.IProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -18,5 +19,11 @@ public class ProjectController {
 	@GetMapping("/project")
 	public List<Project> allt(){
 		return projectService.getAllProject();
+	}
+	
+	@GetMapping("/project/campaignId/{campaignId}")
+	public List<Project> findByCampaignCampaignId(@PathVariable("campaignId")int campaignId){
+		return projectService.getByCampaignCampaignId(campaignId);
+		
 	}
 }

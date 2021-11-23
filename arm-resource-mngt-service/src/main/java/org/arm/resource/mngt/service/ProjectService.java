@@ -18,7 +18,13 @@ public class ProjectService implements IProjectService{
 	@Override
 	public List<Project> getAllProject() {
 		// TODO Auto-generated method stub
+		projectRepository.findAll().forEach(System.out::println);
 		return projectRepository.findAll();
+	}
+
+	@Override
+	public List<Project> getByCampaignCampaignId(int campaignId) {
+		return projectRepository.findByCampaignCampaignId(campaignId);
 	}
 
 

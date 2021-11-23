@@ -8,4 +8,6 @@ import org.arm.resource.mngt.entity.Project;
 public interface IProjectService{
 
 	public List<Project> getAllProject();
+	
+	List<Project> getByCampaignCampaignId(int campaignId);
 }
