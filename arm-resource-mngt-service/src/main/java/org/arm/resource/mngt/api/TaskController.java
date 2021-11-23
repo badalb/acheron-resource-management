@@ -2,8 +2,10 @@ package org.arm.resource.mngt.api;
 
 import java.util.List;
 
-import org.arm.resource.mngt.entity.Project;
+import org.arm.resource.mngt.entity.Availability;
+import org.arm.resource.mngt.entity.Resource;
 import org.arm.resource.mngt.entity.Task;
+import org.arm.resource.mngt.service.IResourceService;
 import org.arm.resource.mngt.service.ITaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,14 +17,17 @@ public class TaskController {
 	@Autowired
 	private ITaskService taskService;
 	
+	
+	
 	@GetMapping("/task")
 	public List<Task> allT(){
 		return taskService.getAllTask();
 	}
 	
 	@GetMapping("/task/projectId/{projectId}")
-	public List<Task> findByProjectProjectId(@PathVariable("projectId")int projectId){
-		return taskService.getByProjectProjectId(projectId);
+	public List<Task> getTaskListByProjectId(@PathVariable("projectId")int projectId){
+		return taskService.getAllTaskListByProjectId(projectId);
 		
 	}
+	
 }

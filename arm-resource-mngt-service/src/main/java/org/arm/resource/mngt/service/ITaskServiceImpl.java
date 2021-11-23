@@ -19,32 +19,9 @@ public class ITaskServiceImpl implements ITaskService {
 	}
 
 	@Override
-	public List<Task> getByProjectProjectId(int projectId) {
+	public List<Task> getAllTaskListByProjectId(int projectId) {
 		return taskRepository.findByProjectProjectId(projectId);
 	}
-
-	
-
-
-		// TODO Auto-generated method stub
-	//	return taskRepository.getAllTaskoFCompany();
-//		private int projectId;
-//		private String projectName;
-//		private String projectOwner;
-//		private Timestamp startDate;
-	//	return null;
-	//	List<ProjectDto> projectDto= new ArrayList<>();
-//	List<Task> alltask=	taskRepository.findAll();
-//	for(int i=0;i<alltask.size();i++) {
-//		
-//		Project p= alltask.get(i).getProject();
-	//	ProjectDto d= new ProjectDto(p.getProjectId(), p.getProjectName(), p.getProjectOwner(), p.getStartDate());
-		//alltask.get(i).setProject(p);
-	//}
-//	//
-//		return taskRepository.findAll();
-//	}
-//}
 
 	}
 

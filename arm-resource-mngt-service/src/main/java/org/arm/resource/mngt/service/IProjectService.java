@@ -9,5 +9,5 @@ public interface IProjectService{
 
 	public List<Project> getAllProject();
 	
-	List<Project> getByCampaignCampaignId(int campaignId);
+	List<Project> getAllProjectListByCampaignId(int campaignId);
 }

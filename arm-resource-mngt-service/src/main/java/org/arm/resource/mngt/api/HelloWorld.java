@@ -35,14 +35,6 @@ public class HelloWorld {
 		elist.add(e);
 		return elist;
 	}
-@GetMapping("/c")
-public List<Campaign> allC(){
-	return campaignService.getAllCampaign();
-}
 
-@GetMapping("/t")
-public List<Project> allt(){
-	return projectService.getAllProject();
-}
 
 }

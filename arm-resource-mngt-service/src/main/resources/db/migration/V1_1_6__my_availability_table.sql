@@ -1,8 +1,9 @@
-CREATE TABLE availabililty (
+CREATE TABLE availability (
   id int(11) NOT NULL AUTO_INCREMENT,
   resource_id int(11),
   start_date TIMESTAMP ,
    end_date  TIMESTAMP ,
+   customhours float,
    available_status varchar(45),
    
    create_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,

@@ -8,5 +8,5 @@ public interface ITaskService {
 
 	public List<Task> getAllTask();
 	
-	List<Task> getByProjectProjectId(int projectId);
+	List<Task> getAllTaskListByProjectId(int projectId);
 }

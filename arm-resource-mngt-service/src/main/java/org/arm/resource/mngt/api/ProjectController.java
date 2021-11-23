@@ -22,8 +22,8 @@ public class ProjectController {
 	}
 	
 	@GetMapping("/project/campaignId/{campaignId}")
-	public List<Project> findByCampaignCampaignId(@PathVariable("campaignId")int campaignId){
-		return projectService.getByCampaignCampaignId(campaignId);
+	public List<Project> getProjectListByCampaignId(@PathVariable("campaignId")int campaignId){
+		return projectService.getAllProjectListByCampaignId(campaignId);
 		
 	}
 }

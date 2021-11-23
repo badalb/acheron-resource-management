@@ -23,7 +23,7 @@ public class ProjectService implements IProjectService{
 	}
 
 	@Override
-	public List<Project> getByCampaignCampaignId(int campaignId) {
+	public List<Project> getAllProjectListByCampaignId(int campaignId) {
 		return projectRepository.findByCampaignCampaignId(campaignId);
 	}
 
